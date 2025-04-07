@@ -1,0 +1,102 @@
+.searchContainer {
+    position: relative;
+    width: 40%;
+    margin: 30px auto 0;
+    display: flex;
+    left: -100px;
+}
+
+.lupaicon {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    height: 20px;
+    width: 20px;
+    pointer-events: none;
+}
+
+.searchInput {
+    width: 100%;
+    padding: 0.5rem 1rem 0.5rem 2.5rem;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    font-weight: bold;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+.searchInput:focus {
+    border-color: #424446;
+}
+
+
+.searchInput:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.grupo21089Icon {
+    position: relative;
+    top: -30px;
+    overflow: hidden;
+    height: 27.1px;
+    width: 30%;
+}
+
+@media (max-width: 769px) {
+    .searchContainer {
+        width: 50%; 
+    }
+
+    .searchInput {
+        font-size: 13px;
+    }
+    
+}
+
+@media (max-width: 572px) {
+    .searchContainer {
+        width: 90%;
+        top: 40px;
+    }
+
+    .searchInput {
+        font-size: 12px;
+        padding: 0.5rem 1rem; 
+    }
+
+    .lupaicon {
+        right: 10px;
+        width: 15px;
+    }
+    .grupo21089Icon {
+        top: -40px;
+        left: 35%;
+        height: 25.6px;
+    }
+}
+
+@media (max-width: 412px) {
+    .searchContainer {
+        width: 90%;
+        top: 40px; 
+    }
+
+    .searchInput {
+        font-size: 11px;
+        padding: 0.5rem 1rem; 
+    }
+
+    .lupaicon {
+        right: 20px;
+        width: 15px;
+    }
+
+    .grupo21089Icon {
+        top: -40px;
+        left: 30%;
+        height: 25.6px;
+    }
+}

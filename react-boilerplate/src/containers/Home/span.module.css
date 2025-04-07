@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+  
+.groupParentContainer {
+    width: 100%;
+    max-width: 1200px; 
+    padding: 1rem; 
+    box-sizing: border-box; 
+}
+
+.groupParent {
+    width: 100%;
+    background-color: #005cff;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: left;
+}
+  
+.rectangleParent {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+  
+.groupChild {
+    position: absolute;
+    background-color: #6220c1;
+    left: calc(50% - 200px);
+    border-radius: 4px;
+    z-index: 1;
+    width: 10%;
+    height: 20px;
+    left: calc(50% - 232px);
+
+}
+  
+.ganheR1000DeContainer {
+    position: relative;
+    line-height: 1.4;
+    flex: 1;
+    z-index: 2;
+    min-width: 200px;
+}
+  
+@media (min-width: 768px) {
+    .groupChild {
+      width: 10%;
+      height: 20px;
+      left: calc(50% - 232px);
+    }
+  
+    .ganheR1000DeContainer {
+      font-size: 14px;
+    }
+}
+  
+@media (max-width: 572px) {
+    .groupChild {
+        width: 10.5%;
+        height: 20px;
+        left: calc(50% - 167px); 
+    }
+
+    .ganheR1000DeContainer {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 412px) {
+    .groupChild {
+        width: 10%;
+        height: 12px;
+        left: calc(50% - 132px); 
+    }
+
+    .ganheR1000DeContainer {
+        font-size: 8px;
+    }
+}
