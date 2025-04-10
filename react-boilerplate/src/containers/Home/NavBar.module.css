@@ -1,9 +1,12 @@
+body {
+    overflow-x: hidden;
+}
+
 .searchContainer {
     position: relative;
     width: 40%;
     margin: 30px auto 0;
     display: flex;
-    left: -100px;
 }
 
 .lupaicon {
@@ -45,7 +48,85 @@
     width: 30%;
 }
 
-@media (max-width: 769px) {
+/* Icons */
+
+.grupo19210Icon {
+    width: 20.6px;
+    position: relative;
+    height: 24px;
+}
+.ol {
+    margin: 0;
+}
+.olNomeCliente {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    line-height: 14px;
+    font-weight: 600;
+}
+.grupo10326 {
+    width: 87px;
+    position: relative;
+    height: 28px;
+}
+.grupo19041 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+.frameChild {
+    width: 24.7px;
+    position: relative;
+    height: 24px;
+}
+.grupo19041Parent {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    left: 75%;
+    top: -61px;
+    gap: 24px;
+    margin-left: auto;
+    font-size: 14px;
+    color: #000;
+    font-family: 'Nunito Sans';
+}
+.menu2023{
+    display: none;
+}
+
+/* Responsive Styles */
+
+@media (max-width:  807px) {
+    .searchContainer {
+        width: 50%;
+        top: 2px;
+    }
+    .searchInput {
+        font-size: 14px;
+        padding: 0.5rem 1rem; 
+    }
+    .lupaicon {
+        right: 20px;
+        width: 20px;
+    }
+    .grupo21089Icon {
+        right: 3.5%;
+        height: 27.1px;
+    }
+    .grupo19041Parent {
+        left: 78%;
+        top: -60px;
+    }
+    
+}
+
+@media (max-width: 729px) {
     .searchContainer {
         width: 50%; 
     }
@@ -56,10 +137,10 @@
     
 }
 
-@media (max-width: 572px) {
+@media (max-width: 580px) {
     .searchContainer {
         width: 90%;
-        top: 40px;
+        top: 55px;
     }
 
     .searchInput {
@@ -72,20 +153,41 @@
         width: 15px;
     }
     .grupo21089Icon {
-        top: -40px;
+        top: -25px;
         left: 35%;
+        overflow: hidden;
         height: 25.6px;
+    }
+    .olNomeCliente {
+        font-size: 11px;
+        display: none;
+    }
+    .grupo19210Icon{
+        width: 14.2%;
+        display: none;
+    }
+    .frameChild{
+
+        right: 9%;   
+        width: 6.5%;
+        height: 5%;
+    }
+    .menu2023{
+        display: block;
+        position: relative;
+        top: -88px;
+        left: 5%;
     }
 }
 
-@media (max-width: 412px) {
+@media (max-width: 480px) {
     .searchContainer {
-        width: 90%;
+        width: 80%;
         top: 40px; 
     }
 
     .searchInput {
-        font-size: 11px;
+        font-size: 12px;
         padding: 0.5rem 1rem; 
     }
 
@@ -95,8 +197,72 @@
     }
 
     .grupo21089Icon {
-        top: -40px;
-        left: 30%;
+        top: -37px;
+        left: 36.5%;
         height: 25.6px;
+    }
+    .olNomeCliente {
+        font-size: 11px;
+        display: none;
+    }
+    .grupo19210Icon{
+        width: 14.2%;
+        display: none;
+    }
+    .grupo19041Parent {
+        left: 63.6%;
+        top: -70px;
+    }
+    .frameChild{
+        right: 7%;   
+    }
+    .menu2023{
+        position: relative;
+        top: -92px;
+        left: 9%; 
+    }
+}
+
+@media (max-width: 379px) {
+    .searchContainer {
+        width: 80%;
+        top: 40px; 
+    }
+
+    .searchInput {
+        font-size: 12px;
+        padding: 0.5rem 1rem; 
+    }
+
+    .lupaicon {
+        right: 20px;
+        width: 15px;
+    }
+
+    .grupo21089Icon {
+        top: -37px;
+        left: 36.5%;
+        height: 25.6px;
+    }
+    .olNomeCliente {
+        font-size: 11px;
+        display: none;
+    }
+    .grupo19210Icon{
+        width: 14.2%;
+        display: none;
+    }
+    .grupo19041Parent {
+        left: 63.6%;
+        top: -70px;
+    }
+    .frameChild{
+        right: 10%;   
+    }
+    .menu2023{
+        position: relative;
+        display: flex;
+        top: -92px;
+        left: 9%; 
     }
 }

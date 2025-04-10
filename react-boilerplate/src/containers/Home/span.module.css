@@ -87,10 +87,36 @@ body {
     .groupChild {
         width: 10%;
         height: 12px;
+        left: calc(50% - 116px); 
+    }
+
+    .ganheR1000DeContainer {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 480px) {
+    .groupChild {
+        width: 10%;
+        height: 12px;
         left: calc(50% - 132px); 
     }
 
     .ganheR1000DeContainer {
-        font-size: 8px;
+        font-size: 8.5px;
+        left: calc(50% - 162px);
+    }
+}
+
+@media (max-width: 375px) and (min-width: 344px) {
+    .groupChild {
+        width: 10%;
+        height: 12px;
+        left: calc(50% - 116px); 
+    }
+
+    .ganheR1000DeContainer {
+        font-size: 7.5px;
+        left: calc(50% - 142px);
     }
 }
