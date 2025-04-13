@@ -4,21 +4,21 @@ import styles from './HomeMenu.module.css';
 const HomeMenu: FunctionComponent = () => {
   const [mostrarPainel, setMostrarPainel] = useState(false);
   const [categoriaClicada, setCategoriaClicada] = useState(false);
-  const [categoriaSelecionada, setCategoriaSelecionada] = useState<number | null>(null); 
+  const [categoriaSelecionada, setCategoriaSelecionada] = useState<number | null>(null);
 
   const togglePainel = () => {
     setMostrarPainel(!mostrarPainel);
-    setCategoriaClicada(!categoriaClicada); 
+    setCategoriaClicada(!categoriaClicada);
   };
 
   const handleCategoriaClick = (index: number) => {
-    setCategoriaSelecionada(index); 
+    setCategoriaSelecionada(index);
   };
 
   const categorias = [
-    "Departamento 1", "Departamento 2", "Departamento 3", "Departamento 4", "Departamento 5",
-    "Departamento 6", "Departamento 7", "Departamento 8", "Departamento 9", "Departamento 10",
-    "Departamento 11", "Departamento 12", "Departamento 13", "Departamento 14", "Departamento 15"
+    "Departamento", "Departamento", "Departamento", "Departamento", "Departamento",
+    "Departamento", "Departamento", "Departamento", "Departamento", "Departamento",
+    "Departamento", "Departamento", "Departamento", "Departamento", "Departamento"
   ];
 
   return (
@@ -39,28 +39,80 @@ const HomeMenu: FunctionComponent = () => {
 
         {mostrarPainel && (
           <div className={styles.miniPainel}>
-            <div className={styles.categorias}>
-              {categorias.map((categoria, index) => (
-                <div
-                  key={index}
-                  className={`${styles.categoriaItem} ${categoriaSelecionada === index ? styles.categoriaClicada : ''}`}
-                  onClick={() => handleCategoriaClick(index)}
-                >
-                  {categoria}
+            <div className={styles.ladoEsquerdo}>
+              <div className={styles.scrollArea}>
+                <div className={styles.categorias}>
+                  {categorias.map((categoria, index) => (
+                    <div
+                      key={index}
+                      className={`${styles.categoriaItem} ${
+                        categoriaSelecionada === index ? styles.categoriaClicada : ''
+                      }`}
+                      onClick={() => handleCategoriaClick(index)}
+                    >
+                  
+                      <img
+                        className={`${styles.arrowIcon} ${
+                          categoriaSelecionada === index ? styles.arrowSelecionada : ''
+                        }`}
+                        src={
+                          categoriaSelecionada === index
+                            ? 'public/arrow-blue.svg'
+                            : 'public/arrow.svg' 
+                        }
+                        alt="Seta"
+                      />
+                      {categoria}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <div className={styles.ladoDireito}>
+              {[...Array(3)].map((_, colIndex) => (
+                <div key={colIndex} className={styles.frameParent1}>
+                  <div className={styles.loremIpsumLoremIpsumLoremWrapper}>
+                    <b className={styles.loremIpsumLoremIpsumLorem}>Categoria</b>
+                  </div>
+
+                  {[...Array(7)].map((_, index) => (
+                    <div key={index} className={styles.loremIpsumLoremIpsumLoremContainer}>
+                      <div className={styles.loremIpsumLoremIpsumLorem}>Categoria</div>
+                    </div>
+                  ))}
                 </div>
               ))}
+
+              <div className={styles.grupo18846}>
+                <div className={styles.imagemContainer}>
+                  <img
+                    className={styles.gradientOverlayIcon}
+                    alt=""
+                    src="public/caneca.jpg"
+                  />
+                  <div className={styles.confiraOsProdutosQueContainer}>
+                    <p className={styles.confiraOs}>{`Confira os `}</p>
+                    <p className={styles.confiraOs}>Produtos</p>
+                    <p className={styles.confiraOs}>
+                      <b>Que acabaram</b>
+                    </p>
+                    <p className={styles.confiraOs}>
+                      <b>De chegar</b>
+                    </p>
+                  </div>
+                  <button className={styles.conferir}>ver todos</button>
+                </div>
+              </div>
             </div>
           </div>
         )}
 
-        <div className={styles.verTodasAs}>Departamento</div>
-        <div className={styles.verTodasAs}>Departamento</div>
-        <div className={styles.verTodasAs}>Departamento</div>
-        <div className={styles.verTodasAs}>Departamento</div>
-        <div className={styles.verTodasAs}>Departamento</div>
-        <div className={styles.verTodasAs}>Departamento</div>
-        <div className={styles.verTodasAs}>Departamento</div>
-        <div className={styles.verTodasAs}>Departamento</div>
+        {categorias.slice(0, 8).map((categoria, index) => (
+          <div key={index} className={styles.verTodasAs}>
+            {categoria}
+          </div>
+        ))}
       </div>
     </div>
   );
