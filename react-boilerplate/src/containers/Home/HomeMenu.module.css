@@ -3,16 +3,16 @@
     justify-content: center;
     width: 100%;
     padding: 10px;
-    margin-left: -1%;
+    margin-left: -2%;
     box-sizing: border-box;
   }
   
   .frameParent {
     display: flex;
     flex-wrap: wrap; 
-    gap: 2px;
+
     justify-content: center;
-    width: 76.1%;
+    width: 100%;
   }
   
   .grupo19319Parent {
@@ -31,7 +31,7 @@
   .linha231,
   .linha232,
   .linha233 {
-    width: 20px;
+    width: 17px;
     height: 2px;
     background-color: #000;
   }
@@ -41,7 +41,7 @@
     align-items: center;
     white-space: nowrap;
     font-size: 1rem;
-    padding: 4px 12px;
+    padding: 2px 9px;
     flex: 1 1 auto; 
     min-width: 120px;
     box-sizing: border-box;
@@ -57,7 +57,7 @@
     position: absolute;
     padding: 20px;
     display: flex;
-    margin-right: 3%;
+    margin-right: -0.1%;
     background-color: #ffffff;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -297,7 +297,7 @@
 
 .confiraOs {
   margin: 5px 0;
-  font-size: 26.5px;
+  font-size: 22.5px;
   font-weight: 400;
 }
 
@@ -327,6 +327,39 @@
   transform: scale(1.05); 
 }
 
+.departamentoPainel .frameParent1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 12px;
+  left: -39.5%;
+  top: 50px;
+  text-align: left;
+  font-size: 18px;
+  width: 30%;
+}
+  
+.departamentoPainel .categorias {
+  display: flex;
+  flex-direction: row;
+  gap: 110px;
+}
+
+.departamentoPainel .grupo18846{
+  flex-shrink: 0;
+  width: 50%;
+  left: -4%;
+}
+
+.departamentoPainel .departamento {
+  font-size: 24px; 
+  font-weight: bold; 
+  color: #333; 
+  margin-bottom: 20px; 
+  text-align: left; 
+}
   @media (max-width: 580px) {
     .homeMenu,
     .frameParent,
@@ -335,4 +368,5 @@
       display: none !important;
     }
   }
+
 

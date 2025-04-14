@@ -61,9 +61,9 @@ body {
   
 @media (min-width: 768px) {
     .groupChild {
-      width: 10%;
+      width: 11%;
       height: 20px;
-      left: calc(50% - 232px);
+      left: calc(50% - 219px);
     }
   
     .ganheR1000DeContainer {
@@ -74,8 +74,8 @@ body {
 @media (max-width: 572px) {
     .groupChild {
         width: 10.5%;
-        height: 20px;
-        left: calc(50% - 167px); 
+        height: 12px;
+        left: calc(50% - 155px); 
     }
 
     .ganheR1000DeContainer {
