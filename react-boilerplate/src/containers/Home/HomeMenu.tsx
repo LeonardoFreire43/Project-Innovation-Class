@@ -50,7 +50,7 @@ const HomeMenu: FunctionComponent = () => {
               mostrarPainelSimplificado === index ? styles.categoriaClicada : ''
             }`}
             onClick={() => handleDepartamentoClick(index)}
-            style={{ cursor: 'pointer',}}
+            style={{ cursor: 'pointer', }}
           >
             <b className={styles.verTodasAs}>{categoria}</b>
           </div>

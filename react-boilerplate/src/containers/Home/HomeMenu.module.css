@@ -187,7 +187,6 @@
   position: relative;
   width: 200px;
   left: 20%;
-  top: -4px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -196,8 +195,6 @@
   overflow: hidden;
   text-align: left;
   font-size: 17px;
-  color: #656565;
-  font-family: 'Nunito Sans';
 }
 
 .painelDireitoConteudoWrapper {
@@ -264,7 +261,7 @@
 .gradientOverlayIcon {
   position: absolute;
   z-index: 1;
-  width: 80%;
+  width: 82%;
   left: 140%;
   height: 100%;
   border-radius: 10px;
@@ -350,7 +347,7 @@
 .departamentoPainel .grupo18846{
   flex-shrink: 0;
   width: 50%;
-  left: -4%;
+  left: -5%;
 }
 
 .departamentoPainel .departamento {

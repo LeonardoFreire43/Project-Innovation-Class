@@ -59,7 +59,7 @@ body {
     min-width: 200px;
 }
   
-@media (min-width: 768px) {
+@media (min-width: 767px){
     .groupChild {
       width: 11%;
       height: 20px;
@@ -70,8 +70,19 @@ body {
       font-size: 14px;
     }
 }
-  
-@media (max-width: 572px) {
+
+@media (max-width: 765px) {
+    .groupChild {
+        width: 11%;
+        height: 20px;
+        left: calc(50% - 219px);
+      }
+    
+      .ganheR1000DeContainer {
+        font-size: 14px;
+      }
+}
+@media (max-width: 575px) {
     .groupChild {
         width: 10.5%;
         height: 12px;
@@ -120,3 +131,5 @@ body {
         left: calc(50% - 142px);
     }
 }
+
+
