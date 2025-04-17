@@ -5,6 +5,7 @@ import Home from './containers/Home/span';
 import NavBar from './containers/Home/NavBar';
 import HomeMenu from './containers/Home/HomeMenu';
 import Banner from './containers/Home/Banner';
+import Carrossel from './containers/Home/Carrossel';
 
 
 const link = document.createElement('link');
@@ -18,5 +19,6 @@ createRoot(document.getElementById('root')!).render(
     <NavBar />
     <HomeMenu />
     <Banner />
+    <Carrossel />
   </StrictMode>,
 );
