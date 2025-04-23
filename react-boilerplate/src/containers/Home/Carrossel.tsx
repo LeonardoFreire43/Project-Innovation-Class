@@ -37,8 +37,8 @@ const Carrossel: React.FC = () => {
     },
     {
       breakpoint: "560px",
-      numVisible: 1,
-      numScroll: 1,
+      numVisible: 2,
+      numScroll: 2,
     },
   ];
 

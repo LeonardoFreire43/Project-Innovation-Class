@@ -17,17 +17,8 @@
     position: relative;
     box-sizing: border-box;
     color: #656565;
-    z-index: 100;
-    margin-top: -30px;
+    margin-top: 0px;
   }
-  
-  .p-carousel-items-content,
-  .p-carousel-items-container,
-  .p-carousel-content,
-  .p-carousel {
-    overflow: visible !important;
-  }
-  
   
   .retngulo4300 {
     width: 100%;
@@ -143,4 +134,3 @@
     text-decoration: underline;
 
   }
-  

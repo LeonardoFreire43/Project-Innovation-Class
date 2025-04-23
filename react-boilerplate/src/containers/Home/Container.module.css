@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+.primeiroBanner {
+    position: absolute;
+    top: 60px;
+    font-family: Nunito;
+    left: 10%;
+    background-color: #c2c2c2;
+    width: 40%;
+    height: 747px;
+}
+
+.freeMugMockup2Icon {
+    position: absolute;
+    top: 160px;
+    left: 17%;
+    width: 30%;
+    height: 592.3px;
+    object-fit: contain;
+}
+
+.titulo {
+    align-self: stretch;
+    position: relative;
+    font-size: 30px;
+    letter-spacing: 0.04em;
+    line-height: 140%;
+    text-transform: uppercase;
+}
+
+.duisConsecteturMetus {
+    align-self: stretch;
+    position: relative;
+    letter-spacing: 0.05em;
+    line-height: 140%;
+    white-space: pre-wrap;
+}
+
+.texto {
+    position: absolute;
+    top: 175.5px;
+    left: 55%;
+    width: 587px;
+    height: 636px;
+    display: flex;
+    font-family: Nunito;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 42px;
+}
+
+.primeiroBannner {
+    width: 100%;
+    position: relative;
+    height: 747px;
+    text-align: left;
+    font-size: 18px;
+    color: #000;
+    font-family: Nunito;
+}
+
+/* Responsividade */
+
+/* Telas grandes (acima de 1200px) */
+@media (min-width: 1630px) {
+    .primeiroBanner {
+        width: 40%;
+        height: 747px;
+        left: 10%;
+    }
+
+    .freeMugMockup2Icon {
+        width: 30%;
+        height: 592.3px;
+        left: 17%;
+    }
+
+    .texto {
+        top: 175.5px;
+        left: 55%;
+        width: 587px;
+        gap: 42px;
+    }
+}
+
+/* Telas médias (entre 768px e 1199px) */
+@media (max-width: 1200px) and (min-width: 768px) {
+    .primeiroBanner {
+        width: 50%;
+        height: 600px;
+        left: 5%;
+    }
+
+    .freeMugMockup2Icon {
+        width: 40%;
+        height: 500px;
+        left: 10%;
+    }
+
+    .texto {
+        top: 80px;
+        left: 65%;
+        width: 300px;
+        gap: 30px;
+        font-size: 14px;
+    }
+
+    .titulo {
+        font-size: 24px;
+    }
+}
+
+/* Telas pequenas (entre 560px e 767px) */
+@media (max-width: 767px) and (min-width: 560px) {
+    .primeiroBanner {
+        width: 80%;
+        height: 500px;
+        left: 10%;
+    }
+
+    .freeMugMockup2Icon {
+        width: 70%;
+        height: 400px;
+        left: 20%;
+        top: 90px;
+    }
+
+    .texto {
+        top: 600px;
+        left: 10%;
+        width: 80%;
+        gap: 20px;
+        font-size: 16px;
+    }
+
+    .titulo {
+        font-size: 30px;
+    }
+}
+
+/* Telas muito pequenas (abaixo de 560px) */
+@media (max-width: 559px) {
+    .primeiroBanner {
+        width: 90%;
+        height: 530px;
+        left: 5%;
+        top: 30px;
+    }
+
+    .freeMugMockup2Icon {
+        width: 80%;
+        height: auto;
+        left: 10%;
+        top: 100px;
+    }
+
+    .texto {
+        position: relative;
+        top: 600px;
+        left: 5%;
+        width: 90%;
+        gap: 15px;
+    }
+
+    .titulo {
+        font-size: 28px;
+        text-align: center;
+    }
+}
+

@@ -5,7 +5,10 @@ import Home from './containers/Home/span';
 import NavBar from './containers/Home/NavBar';
 import HomeMenu from './containers/Home/HomeMenu';
 import Banner from './containers/Home/Banner';
+import './containers/Home/Container'
 import Carrossel from './containers/Home/Carrossel';
+import Container from './containers/Home/Container';
+import Container2 from './containers/Home/Container2'
 
 
 const link = document.createElement('link');
@@ -20,5 +23,7 @@ createRoot(document.getElementById('root')!).render(
     <HomeMenu />
     <Banner />
     <Carrossel />
+    <Container />
+    <Container2 />
   </StrictMode>,
 );
