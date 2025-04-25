@@ -1,54 +1,65 @@
-# React + TypeScript + Vite
+Projeto Responsivo - React Boilerplate
+Este é um projeto de site responsivo desenvolvido utilizando as melhores práticas de desenvolvimento web. O site foi projetado para se adaptar a diferentes tamanhos de tela, garantindo uma experiência de usuário consistente em dispositivos desktop, tablets e smartphones.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Tecnologias Utilizadas
+React: Biblioteca JavaScript para construção de interfaces de usuário.
+CSS Modules: Para estilização modular e evitar conflitos de classes.
+HTML5: Estrutura semântica do site.
+JavaScript/TypeScript: Lógica e tipagem do projeto.
+Vite: Ferramenta de build rápida para desenvolvimento e produção.
+Git: Controle de versão.
+📱 Funcionalidades do Site
+Responsividade Completa:
 
-Currently, two official plugins are available:
+O site é totalmente responsivo, adaptando-se a diferentes tamanhos de tela (desktop, tablet e mobile).
+Elementos como menus, rodapés e imagens ajustam-se automaticamente para melhorar a experiência do usuário.
+Barra de Pesquisa:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O usuário pode pesquisar qualquer termo, e um mini balão exibirá a palavra pesquisada como feedback visual.
+Rodapé Interativo:
 
-## Expanding the ESLint configuration
+O rodapé contém seções como "Institucional", "Central de Ajuda" e "Atendimento", que se transformam em catálogos clicáveis no mobile, com setas indicativas.
+Imagens Responsivas:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Todas as imagens do site são otimizadas para se ajustar ao tamanho do contêiner, mantendo a proporção e qualidade.
+Design Moderno:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Layout limpo e moderno, com uso de cores consistentes e animações suaves.
+🖥️ Como Rodar o Projeto
+Clone o Repositório:
+https://github.com/LeonardoFreire43/Project-Innovation-Class.git
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Instale as Dependências:
+npm install
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Inicie o Servidor de Desenvolvimento:
+npm run dev
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Acesse no Navegador:
+O projeto estará disponível em http://localhost:3000.
+
+📂 Estrutura de Pastas
+src/
+├── components/       # Componentes reutilizáveis
+├── containers/       # Páginas principais do site
+│   ├── Home/         # Página inicial
+│       ├── NavBar.tsx
+│       ├── Rodape.tsx
+│       ├── Contato.module.css
+├── assets/           # Imagens e arquivos estáticos
+├── App.tsx           # Componente principal
+├── main.tsx          # Ponto de entrada do React
+
+🌟 Funcionalidades Futuras
+Integração com APIs externas para busca de dados dinâmicos.
+Melhorias no desempenho e otimização de imagens.
+Adição de animações para transições de páginas.
+
+📝 Licença
+Este projeto está sob a licença MIT. Sinta-se à vontade para usá-lo e modificá-lo conforme necessário.
+
+📧 Contato
+Caso tenha dúvidas ou sugestões, entre em contato:
+
+E-mail: leonardofreiremenezes1212@gmail.com
+LinkedIn: https://www.linkedin.com/in/leonardo-freire-b0a730269/
