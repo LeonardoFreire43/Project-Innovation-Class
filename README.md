@@ -27,7 +27,7 @@ Design Moderno:
 Layout limpo e moderno, com uso de cores consistentes e animações suaves.
 🖥️ Como Rodar o Projeto
 Clone o Repositório:
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
+https://github.com/LeonardoFreire43/Project-Innovation-Class.git
 
 Instale as Dependências:
 npm install
