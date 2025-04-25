@@ -100,6 +100,36 @@ body {
     display: none;
 }
 
+.tooltip {
+    position: absolute;
+    top: 115px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #9fa6b1;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    animation: fadeInOut 2s ease-in-out;
+  }
+  
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+      transform: translateX(-50%) translateY(-10px);
+    }
+    10%, 90% {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(-50%) translateY(-10px);
+    }
+  }
+
 /* Responsive Styles */
 
 @media (max-width:  807px) {

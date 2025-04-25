@@ -1,0 +1,232 @@
+.newsletter-frame {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    top: 120px;
+    left: 10%;
+    justify-content: center;
+    padding: 20px;
+    width: 80%;
+    height: auto; 
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    top: -120px;
+}
+
+.highlight {
+    color: #005cff;
+}
+
+.newsletter-form {
+    display: flex;
+    margin-top: -6% !important;
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center;
+    gap: 25px; 
+    width: 100%;
+    position: static;
+}   
+
+.input-wrapper {
+    width: 25%;
+    min-width: 150px;
+}
+
+.input-container {
+    width: 100%;
+}
+
+.newsletter-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.privacy-policy {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+    white-space: nowrap;
+    max-width: 200px;
+}
+
+.checkbox {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+}
+
+.privacy-label {
+    font-size: 14px;
+    color: #656565;
+}
+
+.button-large-instance {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-shrink: 0;
+    width: auto;
+    max-width: 200px; 
+    padding: 10px 30px;
+    background-color: #005cff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 400px;
+}
+
+.button-large-instance:hover {
+    background-color: #0041cc;
+}
+
+@media (max-width: 1364px) {
+  .button-large-instance{
+    margin-left: 120px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 998px ) {
+    .newsletter-frame {
+        width: 90%;
+        left: 5%;
+    }
+    .button-large-instance {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 821px) {
+
+    .newsletter-frame {
+        width: 90%;
+        left: 5%;
+        top: 420px;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .input-wrapper {
+        width: 100%;
+    }
+
+    .privacy-policy {
+        justify-content: center;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .button-large-instance {
+        width: 100%;
+        margin-left: 75px;
+    }
+}
+
+@media (max-width: 764px) {
+
+    .newsletter-frame {
+        width: 90%;
+        left: 5%;
+        top: 690px;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .input-wrapper {
+        width: 100%;
+    }
+
+    .privacy-policy {
+        justify-content: center;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .button-large-instance {
+        width: 100%;
+        margin-left: 75px;
+    }
+}
+
+@media (max-width: 562px) {
+
+    .newsletter-frame {
+        width: 90%;
+        left: 5%;
+        top: 930px;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .input-wrapper {
+        width: 100%;
+    }
+
+    .privacy-policy {
+        justify-content: center;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .button-large-instance {
+        width: 100%;
+        margin-left: 75px;
+    }
+}
+
+@media (max-width: 460px) {
+    .newsletter-frame {
+        width: 90%;
+        left: 5%;
+        top: 1100px;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .input-wrapper {
+        width: 100%;
+    }
+
+    .privacy-policy {
+        justify-content: center;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .button-large-instance {
+        width: 100%;
+        margin-left: 75px;
+    }
+}

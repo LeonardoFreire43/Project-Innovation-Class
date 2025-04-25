@@ -2,7 +2,7 @@
 
 .primeiroBanner {
     position: absolute;
-    top: 60px;
+    top: -210px;
     font-family: Nunito;
     left: 10%;
     background-color: #c2c2c2;
@@ -12,7 +12,7 @@
 
 .freeMugMockup2Icon {
     position: absolute;
-    top: 160px;
+    top: -120px;
     left: 17%;
     width: 30%;
     height: 592.3px;
@@ -38,7 +38,7 @@
 
 .texto {
     position: absolute;
-    top: 175.5px;
+    top: -115.5px !important;
     left: 55%;
     width: 587px;
     height: 636px;
@@ -164,6 +164,41 @@
     .titulo {
         font-size: 28px;
         text-align: center;
+    }
+}
+
+@media (max-width: 423px) {
+
+    .primeiroBanner {
+        top: 340px !important;
+    }
+
+    .freeMugMockup2Icon {
+        top: 430px !important;
+    }
+
+    .texto {
+       margin-top: 100px !important;
+    }
+
+}
+
+
+@media (max-width: 763px){
+    .primeiroBanner{
+        top: 290px;
+    }
+
+    .freeMugMockup2Icon{
+        top: 360px;
+    }
+
+    .texto {
+        position: relative;
+        top: 900px !important;
+        left: 10%;
+        width: 80%;
+        gap: 16px;
     }
 }
 
